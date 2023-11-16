@@ -1,0 +1,19 @@
+/*=============================
+=            Media            =
+=============================*/
+$imac27 : 2560px;
+$imac21 : 1920px;
+$cinema : 1680px;
+$pad_g : 1160px;
+$pad_v : 768px;
+$mobile : 570px;
+
+$XXLarge: (media: "(min-width: #{$imac21})");
+$XLarge: (media: "(min-width: #{$cinema}) and (max-width: #{$imac21})");
+$Large: (media: "(min-width: #{$pad_g}) and (max-width: #{$cinema})");
+$Medium: (media: "(max-width: #{$pad_g})");
+$XSmall: (media: "(max-width: #{$pad_v})");
+$Small: (media: "(max-width: #{$mobile})");
+$HSmall: (media: "(max-height: 735px)");
+
+/*=====  End of Media  ======*/

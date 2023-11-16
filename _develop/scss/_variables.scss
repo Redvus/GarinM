@@ -1,0 +1,73 @@
+/*================================
+=            Variable            =
+================================*/
+
+$border_1: 1px solid $primary;
+$border_2: 2px solid $primary;
+$border_3: 3px solid $primary;
+
+$base-duration: 0.2s;
+$base-timing: 0.2s;
+
+// Layout
+$containerWidth: 57rem;
+$containerHeight: 70.5vh;
+$containerInsideWidth: 72%;
+$containerIncrease: 5;
+
+$containerPadding: 3rem;
+$paddingBase: 1rem;
+
+$frameWidth: 46%;
+$frameHeight: 64vh;
+$frameLeft: 25%;
+$frameRight: 75%;
+
+$frameBackWidth: 85.5%;
+$frameBackLeftTop: 47%;
+$frameBackRightTop: 50%;
+
+// Intro
+$introTopBlockHeight: 40vh;
+$introTopBlockWidth: 70vw;
+$introTitleBlockHeight: 40vh;
+$introTitleBlockWidth: 76vw;
+$introTitleSymbolWidth: calc(#{$containerWidth} / 11);
+$introTitleSymbolLeft: calc((-#{$containerWidth} / 11) / 5.8);
+
+//Intro Mobile
+$introTopBlockWidthMobile: 95vw;
+$introLetterHeightMobile: 35%;
+$introTextHeightMobile: 7%;
+$introButtonHeightMobile: 25%;
+
+//About
+$containerAboutWidth: 22rem;
+
+/*=====  End of Variable  ======*/
+
+/*==============================
+=            Layout            =
+==============================*/
+body {
+    @extend %px;
+    margin: 0;
+    background-color: $third;
+}
+
+svg {
+    transition: all 0.3s;
+}
+
+a {
+    cursor: pointer;
+}
+
+%imgCenter {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-position: center;
+    object-fit: cover;
+}
+/*=====  End of Layout  ======*/

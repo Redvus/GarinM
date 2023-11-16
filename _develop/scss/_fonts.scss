@@ -1,0 +1,276 @@
+/*=============================
+=            Fonts            =
+=============================*/
+
+//@include font-face (
+//    "fontawesome-webfont",
+//    "fonts/fontawesome-webfont/fontawesome-webfont",
+//    ("woff")
+//    ) {
+//    font-style: normal;
+//    font-weight: 400;
+//}
+
+//@include font-face (
+//    "A La Russ",
+//    "fonts/alaruss",
+//    ("woff")
+//    ) {
+//    font-style: normal;
+//    font-weight: 400;
+//}
+//
+//@include font-face (
+//    "AGBengaly Roman",
+//    "fonts/AGBengaly",
+//    ("woff")
+//    ) {
+//    font-style: normal;
+//    font-weight: 400;
+//}
+
+//@font-face {
+//    font-family:"A La Russ";
+//    src: local("A La Russ"),
+//    url("alaruss.woff2") format("woff2"),
+//    url("alaruss.woff") format("woff"),
+//    url("alaruss.ttf") format("opentype");
+//    font-style: normal;
+//    font-weight: 500;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family:"FitaVjazC";
+//    src: local("FitaVjazC"),
+//    url("FitaVjazC.woff2") format("woff2"),
+//    url("FitaVjazC.woff") format("woff"),
+//    url("FitaVjazC.ttf") format("opentype");
+//    font-style: normal;
+//    font-weight: 500;
+//    font-display: swap;
+//}
+
+@font-face {
+    font-family: "CyrillicCompressed Medium";
+    src: local("CyrillicCompressed Medium"),
+    url("../fonts/cyrilliccompressed-medium.woff") format("woff"),
+    url("../fonts/cyrilliccompressed-medium.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+}
+
+//@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+$primary-font:          'Helvetica', serif;
+$heading-font:          "CyrillicCompressed Medium";
+//$heading-font:          'Amatic SC', cursive;
+//$heading-font:          "FitaVjazC";
+$heading-font-light:    "";
+
+$body-font-color     : $primary;
+
+$body-font-size      : 1rem !default;
+$body-font-weight    : normal !default;
+$body-line-height    : 1.2 !default;
+$heading-line-height : 1 !default;
+
+$heading-font-modular : 1vw !default;
+
+$bourbon: (
+        "modular-scale-base": $heading-font-modular,
+        "modular-scale-ratio": $major-third,
+);
+
+$font-size-base:    $body-font-size !default;
+$font-size-large:   calc(#{$body-font-size} + 0.2rem) !default; // ~18px
+$font-size-small:   calc(#{$body-font-size} - 0.32rem) !default; // ~14px
+
+$font-size-h1:      calc(1rem + 5vmin) !default; // ~3rem 48px modular-scale(6)
+$font-size-h2:      calc(1rem + 4vmin) !default; // ~2.5rem 40px modular-scale(5)
+$font-size-h3:      calc(1rem + 3vmin) !default; // ~2rem 33px
+$font-size-h4:      calc(1rem + 2vmin) !default; // ~1.728rem 28px
+$font-size-h5:      calc(1rem + 1vmin) !default; // ~1.44rem 23px
+$font-size-h6:      calc(1rem + 0.5vmin) !default; // ~1.2rem 19px
+
+%px {
+    font: {
+        family: $primary-font;
+        weight: $body-font-weight;
+        size: $font-size-large;
+    };
+    line-height: $body-line-height;
+    color: $body-font-color;
+    margin: 0;
+    //text-indent: 1rem;
+
+    @include grid-media($XXLarge) {
+        font-size: $font-size-large;
+    }
+
+    @include grid-media($XLarge) {
+        font-size: $font-size-large;
+    }
+
+    @include grid-media($Large) {
+        font-size: $font-size-large;
+    }
+
+    @include grid-media($Medium) {
+        font-size: $font-size-small;
+        //line-height: 1;
+    }
+
+    @include grid-media($HSmall) {
+        font-size: $font-size-small;
+    }
+
+    @include grid-media($XSmall) {
+        font-size: $font-size-base;
+    }
+
+    @include grid-media($Small) {
+        font-size: $font-size-base;
+        //line-height: 1.1;
+    }
+}
+
+%hx {
+    font: {
+        family: $heading-font;
+        weight: 500;
+    };
+    //letter-spacing: 0.04em;
+    line-height: $heading-line-height;
+    text-transform: uppercase;
+    margin: 0;
+}
+/*=====  End of Fonts  ======*/
+
+h1 {
+    @extend %hx;
+    font-size: $font-size-h1;
+    //margin-bottom: 1em;
+    //text-align: center;
+    //transition: all .3s;
+}
+
+h2 {
+    @extend %hx;
+    font-size: $font-size-h2;
+
+    @include grid-media($Small) {
+        font-size: calc(1rem + 2vmin);
+    }
+}
+
+h3 {
+    @extend %hx;
+    font-size: $font-size-h3;
+
+    @include grid-media($Small) {
+        font-size: calc(1rem + 2vmin);
+    }
+}
+
+h4 {
+    @extend %hx;
+    font-size: $font-size-h4;
+}
+
+h5 {
+    @extend %hx;
+    font-size: $font-size-h5;
+}
+
+h6 {
+    @extend %hx;
+    font-size: $font-size-h6;
+}
+
+.large-text {
+    font-size: $font-size-large;
+}
+
+.small-text {
+    font-size: $font-size-small;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: disc;
+    margin-left: 0.9rem;
+    padding-left: -0.9rem;
+
+    li {
+        font-size: $font-size-base;
+    }
+
+    @include grid-media($XXLarge) {
+        li {
+            font-size: $font-size-large;
+        }
+    }
+
+    @include grid-media($XLarge) {
+        li {
+            font-size: $font-size-large;
+        }
+    }
+
+    @include grid-media($Large) {
+        li {
+            font-size: $font-size-large;
+        }
+    }
+
+    @include grid-media($Medium) {
+        margin-left: 0.6rem;
+        padding-left: -0.6rem;
+
+        li {
+            font-size: $font-size-small;
+        }
+    }
+
+    @include grid-media($HSmall) {
+        margin-left: 0.6rem;
+        padding-left: -0.6rem;
+
+        li {
+            font-size: $font-size-small;
+        }
+    }
+
+    @include grid-media($XSmall) {
+        margin-left: 0.6rem;
+        padding-left: -0.6rem;
+
+        li {
+            font-size: $font-size-base;
+        }
+    }
+
+    @include grid-media($Small) {
+        margin-left: 0.9rem;
+        padding-left: -0.9rem;
+
+        li {
+            font-size: $font-size-base;
+        }
+    }
+}
+
+a {
+    color: $primary;
+    text-decoration: none;
+    transition: color $base-duration, background $base-duration;
+    outline: none;
+
+    // &:active,
+    // &:focus,
+    // &:hover {
+    //     //color: $action-color;
+    // }
+}
