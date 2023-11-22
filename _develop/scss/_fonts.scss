@@ -2,71 +2,27 @@
 =            Fonts            =
 =============================*/
 
-//@include font-face (
-//    "fontawesome-webfont",
-//    "fonts/fontawesome-webfont/fontawesome-webfont",
-//    ("woff")
-//    ) {
-//    font-style: normal;
-//    font-weight: 400;
-//}
-
-//@include font-face (
-//    "A La Russ",
-//    "fonts/alaruss",
-//    ("woff")
-//    ) {
-//    font-style: normal;
-//    font-weight: 400;
-//}
-//
-//@include font-face (
-//    "AGBengaly Roman",
-//    "fonts/AGBengaly",
-//    ("woff")
-//    ) {
-//    font-style: normal;
-//    font-weight: 400;
-//}
-
-//@font-face {
-//    font-family:"A La Russ";
-//    src: local("A La Russ"),
-//    url("alaruss.woff2") format("woff2"),
-//    url("alaruss.woff") format("woff"),
-//    url("alaruss.ttf") format("opentype");
-//    font-style: normal;
-//    font-weight: 500;
-//    font-display: swap;
-//}
-//
-//@font-face {
-//    font-family:"FitaVjazC";
-//    src: local("FitaVjazC"),
-//    url("FitaVjazC.woff2") format("woff2"),
-//    url("FitaVjazC.woff") format("woff"),
-//    url("FitaVjazC.ttf") format("opentype");
-//    font-style: normal;
-//    font-weight: 500;
-//    font-display: swap;
-//}
-
 @font-face {
-    font-family: "CyrillicCompressed Medium";
-    src: local("CyrillicCompressed Medium"),
-    url("../fonts/cyrilliccompressed-medium.woff") format("woff"),
-    url("../fonts/cyrilliccompressed-medium.woff2") format("woff2");
+    font-family: "IzhitsaC";
+    src: local("IzhitsaC"),
+    url("../fonts/IzhitsaC.woff") format("woff"),
+    url("../fonts/IzhitsaC.woff2") format("woff2");
     font-style: normal;
     font-weight: 400;
 }
 
-//@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@font-face {
+    font-family: "AvantGardeGothicC";
+    src: local("IzhitsaC"),
+    url("../fonts/AvantGardeGothicC.woff") format("woff"),
+    url("../fonts/AvantGardeGothicC.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+}
 
-$primary-font:          'Helvetica', serif;
-$heading-font:          "CyrillicCompressed Medium";
-//$heading-font:          'Amatic SC', cursive;
-//$heading-font:          "FitaVjazC";
-$heading-font-light:    "";
+$primary-font:          "AvantGardeGothicC";
+$heading-font:          "IzhitsaC";
+$heading-font-second:    "AvantGardeGothicC";
 
 $body-font-color     : $primary;
 
@@ -86,11 +42,11 @@ $font-size-base:    $body-font-size !default;
 $font-size-large:   calc(#{$body-font-size} + 0.2rem) !default; // ~18px
 $font-size-small:   calc(#{$body-font-size} - 0.32rem) !default; // ~14px
 
-$font-size-h1:      calc(1rem + 5vmin) !default; // ~3rem 48px modular-scale(6)
-$font-size-h2:      calc(1rem + 4vmin) !default; // ~2.5rem 40px modular-scale(5)
-$font-size-h3:      calc(1rem + 3vmin) !default; // ~2rem 33px
-$font-size-h4:      calc(1rem + 2vmin) !default; // ~1.728rem 28px
-$font-size-h5:      calc(1rem + 1vmin) !default; // ~1.44rem 23px
+$font-size-h1:      calc(1rem + 4vmin) !default; // ~3rem 48px modular-scale(6)
+$font-size-h2:      calc(1rem + 3vmin) !default; // ~2.5rem 40px modular-scale(5)
+$font-size-h3:      calc(1rem + 2vmin) !default; // ~2rem 33px
+$font-size-h4:      calc(1rem + 1vmin) !default; // ~1.728rem 28px
+$font-size-h5:      calc(1rem + 0.75vmin) !default; // ~1.44rem 23px
 $font-size-h6:      calc(1rem + 0.5vmin) !default; // ~1.2rem 19px
 
 %px {

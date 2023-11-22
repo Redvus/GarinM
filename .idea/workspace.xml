@@ -4,13 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d642258-c8c8-4bde-9ded-2349a63f4230" name="Changes" comment="" />
+    <list default="true" id="7d642258-c8c8-4bde-9ded-2349a63f4230" name="Changes" comment="Начало проекта">
+      <change afterPath="$PROJECT_DIR$/_develop/_js/About.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_develop/_js/ArrowsAll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_develop/_js/Intro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_develop/_js/Settings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_develop/_js/Sounds.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_develop/scss/_intro.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_develop/scss/_layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_develop/_js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/_develop/_js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_develop/scss/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_develop/scss/_fonts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_develop/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_develop/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -22,22 +41,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;js.buildTools.gulp.gulp_package_dir&quot;: &quot;/Volumes/Vault22/GamesDev/Garin/node_modules/gulp&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Volumes/Vault22/GamesDev/Garin&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "js.buildTools.gulp.gulp_package_dir": "/Volumes/Vault22/GamesDev/Garin/node_modules/gulp",
+    "last_opened_file_path": "/Volumes/RedvusWork/GamesDev/Garin",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_develop/_js" />
+      <recent name="$PROJECT_DIR$/_develop/scss" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_build" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="GarinM" type="js.build_tools.gulp">
       <node-interpreter>project</node-interpreter>
@@ -70,7 +98,19 @@
       <updated>1700129019272</updated>
       <workItem from="1700129020767" duration="1561000" />
       <workItem from="1700130695160" duration="1960000" />
+      <workItem from="1700132714990" duration="1734000" />
+      <workItem from="1700206608499" duration="1112000" />
+      <workItem from="1700292923225" duration="71000" />
+      <workItem from="1700656282406" duration="2467000" />
     </task>
+    <task id="LOCAL-00001" summary="Начало проекта">
+      <created>1700132841434</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700132841434</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -81,10 +121,31 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Начало проекта" />
+    <option name="LAST_COMMIT_MESSAGE" value="Начало проекта" />
   </component>
 </project>

@@ -1,0 +1,56 @@
+#introTitle {
+    width: auto;
+    height: 20vmin;
+    display: block;
+    position: relative;
+    margin-top: 3vh;
+
+    img {
+        @extend %imgCenter;
+    }
+}
+
+#introMonument {
+    width: auto;
+    height: 50vmin;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+
+    img {
+        @extend %imgCenter;
+    }
+}
+
+#introFloor {
+    width: 100vw;
+    height: 35vh;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: lighten($third, 50%);
+    z-index: 3;
+
+    img {
+        @extend %imgCenter;
+    }
+}
+
+#introStreet {
+    width: 100vw;
+    height: 65vh;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: lighten($five, 30%);
+    z-index: 1;
+
+    img {
+        @extend %imgCenter;
+    }
+}

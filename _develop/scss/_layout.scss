@@ -1,0 +1,823 @@
+/*! @group Layout */
+/* ========================================================================== */
+.wrapper {
+	width: 100%;
+	height: 100vh;
+	display: block;
+	//align-items: center;
+	//justify-content: center;
+	position: relative;
+	background-color: $fourth;
+	overflow: hidden;
+	//transition: all .3s;
+	//animation: fadeIn 0.6s ease-in-out;
+	z-index: 1;
+
+	&__intro {
+		width: 100%;
+		height: 100vh;
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: url("../images/kraevedia_back.jpg") 50% 0 no-repeat;
+		background-size: auto 100%;
+		z-index: 0;
+		//opacity: 0;
+	}
+
+	&__service {
+		width: 100%;
+		height: 100vh;
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: url("../images/kraevedia_backService.jpg") 50% 0 no-repeat;
+		background-size: auto 100%;
+		z-index: 1;
+
+		&_arrow {
+			width: 6vmin;
+			height: auto;
+			display: block;
+			position: absolute;
+			left: 13vmin;
+			bottom: 5vh;
+			z-index: 10;
+
+			img {
+				width: 100%;
+				height: 100%;
+				display: block;
+				object-position: center;
+				object-fit: cover;
+			}
+		}
+
+		&_clear,
+		&_next {
+			width: 6vmin;
+			height: auto;
+			display: block;
+			position: absolute;
+			right: 13vmin;
+			bottom: 5vh;
+			z-index: 10;
+
+			img {
+				width: 100%;
+				height: 100%;
+				display: block;
+				object-position: center;
+				object-fit: cover;
+			}
+		}
+	}
+
+	&__citizen {
+		width: 100%;
+		height: 100vh;
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: url("../images/kraevedia_citizenBack.jpg") 50% 100% no-repeat;
+		background-size: auto 60%;
+		z-index: 0;
+	}
+
+	&__chicherone {
+		width: 100%;
+		height: 100vh;
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: url("../images/kraevedia_chicheroneBack.jpg") 50% 100% no-repeat;
+		background-size: auto 60%;
+		z-index: 0;
+	}
+
+	&__kraeved {
+		width: 100%;
+		height: 100vh;
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: url("../images/kraevedia_kraevedBack.jpg") 50% 100% no-repeat;
+		background-size: auto 60%;
+		z-index: 0;
+	}
+
+	&__top {
+		//width: $introTopBlockWidth;
+		//height: auto;
+		width: auto;
+		display: block;
+		position: fixed;
+		top: 5vh;
+		left: 50%;
+		transform: translateX(-50%);
+		//margin: 0 calc((100% - #{$introTopBlockWidth}) / 2);
+		z-index: 10;
+		//opacity: 0;
+
+		&_title {
+			width: auto;
+			height: 20vmin;
+			display: block;
+			position: relative;
+			margin-top: 3vh;
+
+			img {
+				@extend %imgCenter;
+				object-fit: contain;
+			}
+		}
+	}
+
+	&__title {
+		width: $introTitleBlockWidth;
+		//height: $introTitleBlockHeight;
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+		top: calc((#{$introTopBlockWidth} / 2.8) - ((#{$introTopBlockWidth} / 2.8) / 4));
+		left: 0;
+		margin: 1rem calc((100% - #{$introTitleBlockWidth}) / 2) 0;
+		z-index: 2;
+		opacity: 0;
+
+		&_top, &_bottom {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+
+		&_symbol {
+			//width: $introTitleSymbolWidth;
+			width: auto;
+			height: 10vw;
+			display: block;
+			position: relative;
+
+			img {
+				@extend %imgCenter;
+			}
+		}
+	}
+
+	&__bottom {
+		width: calc(#{$introTitleBlockWidth} / 1.3);
+		display: block;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		margin: 0 calc((100% - (#{$introTitleBlockWidth} / 1.3)) / 2) 0;
+		z-index: 3;
+		opacity: 0;
+
+		&_menu {
+			width: 100%;
+			list-style: none;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			margin: 0 0 6vh;
+
+			li {
+				width: calc(100% / 3.5);
+				height: 100%;
+				display: block;
+				position: relative;
+
+				a {
+					width: calc(100% - 2rem);
+					height: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					padding: 0.75rem 1rem;
+					background: linear-gradient($five, $secondary);
+					border-radius: 0.3rem;
+					color: $fourth;
+					font-size: $font-size-large;
+					font-family: $heading-font-second;
+				}
+
+				&:hover {
+
+					a {
+						background: linear-gradient(darken($secondary, 2%), $secondary);
+					}
+				}
+
+				&:active {
+
+					a {
+						background: linear-gradient(lighten($five, 15%), lighten($five, 25%));
+					}
+				}
+			}
+		}
+	}
+
+	&__back {
+
+		&_service {
+			width: 100%;
+			height: 100vh;
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			background: url("../images/kraevedia_backService.jpg") 50% 0 no-repeat;
+			background-size: auto 100%;
+			z-index: 0;
+		}
+	}
+
+	&__lightbox {
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		top: 0;
+		left: 0;
+		position: fixed;
+		background-color: rgba($third, 60%);
+		z-index: 9999;
+
+		&_block {
+			width: calc(25vw - 4rem);
+			min-height: calc(20vh - 4rem);
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			background-color: $secondary;
+			border: 0.3rem solid $primary;
+			border-radius: 0.6rem;
+			//top: 50%;
+			//left: 50%;
+			padding: 2rem;
+			//transform: translate(-50%, -50%);
+		}
+
+		&_button {
+			width: 100%;
+			height: 7vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+			border-radius: 0.3rem;
+			color: $secondary;
+			font-size: $font-size-h6;
+			text-align: center;
+			background: linear-gradient(lighten($five, 35%), $five);
+			margin-bottom: 1.5rem;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			&:hover {
+				color: lighten($secondary, 15%);
+				background: linear-gradient(lighten($five, 45%), lighten($five, 10%));
+			}
+
+			&:active {
+				background: linear-gradient(lighten($five, 15%), lighten($five, 25%));
+			}
+		}
+
+		&_close {
+			width: 3rem;
+			height: 3rem;
+			display: block;
+			background-color: $primary;
+			position: absolute;
+			top: 0;
+			right: 0;
+			border-radius: 50%;
+			transform: translate(50%, -50%);
+
+			&:before {
+				content: "";
+				width: 1.5rem;
+				height: 0.3rem;
+				display: block;
+				position: absolute;
+				top: 50%;
+				right: 50%;
+				background-color: $secondary;
+				transform: translate(50%, -50%) rotate(45deg);
+			}
+
+			&:after {
+				content: "";
+				width: 1.5rem;
+				height: 0.3rem;
+				display: block;
+				position: absolute;
+				top: 50%;
+				right: 50%;
+				background-color: $secondary;
+				transform: translate(50%, -50%) rotate(-45deg);
+			}
+		}
+
+		#settingsText {
+			min-height: 12vh;
+		}
+	}
+
+	&__stars {
+		height: 3rem;
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+		position: absolute;
+		top: 12vmin;
+		left: 50%;
+		margin: 1rem 0 0;
+		transform: translateX(-50%);
+
+		li {
+			width: 5vmin;
+			height: 5vmin;
+			margin-right: 0.5rem;
+			background-image: url("../images/cp_stars_empty.png");
+			background-position: 0 0;
+			background-size: auto 100%;
+
+			&.fill {
+				background-image: url("../images/cp_stars_fill.png");
+			}
+
+			picture {
+				width: 100%;
+				height: 100%;
+				display: block;
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-position: center;
+					object-fit: cover;
+				}
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	//@include grid-media($Medium) {
+	//	//padding: 6rem 1rem 0;
+	//}
+	//
+	//@include grid-media($XSmall) {
+	//
+	//	&_news {
+	//		padding-right: 0;
+	//	}
+	//}
+
+	@include grid-media($XXLarge) {
+
+		&__citizen {
+			background-size: auto 100%;
+		}
+	}
+
+	@include grid-media($XLarge) {
+
+		&__citizen {
+			background-size: auto 100%;
+		}
+	}
+
+	@include grid-media($Small) {
+		//height: inherit;
+		//position: fixed;
+		//min-height: 100vh;
+
+		&__intro {
+			background: url("../images/kraevedia_back.jpg") 50% 90% no-repeat;
+			background-size: auto 30%;
+		}
+
+		&__top {
+			width: $introTopBlockWidthMobile;
+			height: calc(#{$introTopBlockWidthMobile} / 2.8);
+		}
+
+		&__title {
+			width: $introTopBlockWidthMobile;
+			margin: 3rem calc((100% - #{$introTopBlockWidthMobile}) / 2) 0;
+
+			&_symbol {
+				height: 12vw;
+			}
+		}
+
+		&__bottom {
+			width: calc(100% - 2rem);
+			margin: 0 1rem;
+			top: 40vmin;
+			bottom: inherit;
+
+			&_menu {
+				width: 100%;
+				flex-direction: column;
+				justify-content: normal;
+				align-items: flex-start;
+
+				li {
+					width: 100%;
+					margin-bottom: 1.5rem;
+
+					a {
+						padding: 1rem;
+					}
+				}
+			}
+		}
+
+		&__game {
+
+			&_arrow {
+				width: 10vmin;
+				left: 1rem;
+				bottom: 6vh;
+			}
+
+			&_clear,
+			&_next {
+				width: 10vmin;
+				right: 1rem;
+				bottom: 6vh;
+			}
+		}
+
+		&__stars {
+			margin: 1.7rem 0 0;
+		}
+
+		&__lightbox {
+
+			&_block {
+				width: calc(80vw - 4rem);
+			}
+		}
+
+		&__service {
+			opacity: 0.5;
+
+			&_arrow {
+				width: 10vmin;
+				left: 2rem;
+				bottom: 3.5vh;
+			}
+
+			&_clear,
+			&_next {
+				width: 10vmin;
+				right: 2rem;
+				bottom: 3vh;
+			}
+		}
+	}
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	position: relative;
+	background-color: lighten($third, 70%);
+	z-index: 5;
+
+	&--wide {
+		width: calc(#{$containerHeight} * 1.8);
+	}
+
+	&__wrapper {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+
+		//&_padding {
+		//	width: calc(100% - (#{$containerPadding} * 2));
+		//	height: calc(100% - (#{$containerPadding} * 2));
+		//	padding: $containerPadding;
+		//}
+
+		&_category {
+			width: 100%;
+			display: flex;
+			flex-direction: column-reverse;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&_subcategory {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			position: relative;
+			margin-top: 7vh;
+		}
+
+		&_about {
+			width: 100%;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+		}
+	}
+
+	&__category {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+	}
+
+	&__title {
+		height: auto;
+		display: block;
+		position: relative;
+	}
+
+	&__inside {
+		width: $containerInsideWidth;
+		height: inherit;
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+
+		&_back {
+			width: 100%;
+			//height: 100%;
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 1;
+
+			img {
+				width: 100%;
+				height: 100%;
+				display: block;
+				object-position: center;
+				object-fit: cover;
+			}
+		}
+	}
+
+	&__back {
+		width: 100%;
+		height: 100%;
+		display: block;
+		z-index: 1;
+
+		img {
+			width: 100%;
+			height: 100%;
+			display: block;
+			object-position: center;
+			object-fit: cover;
+		}
+	}
+
+	&__about {
+		width: 100%;
+		height: 70%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+
+		&_back {
+			background: url("../images/kraevedia_catBack.png") 50% 0 no-repeat;
+			background-size: auto 100%;
+		}
+
+		&_person {
+			text-align: center;
+			margin-top: 2rem;
+			color: $secondary;
+
+			p {
+				margin: 0.5rem 0;
+			}
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			&--gone {
+				border: $border_1;
+				border-color: $secondary;
+				padding: calc(#{$paddingBase} / 2);
+				display: inline-block;
+			}
+		}
+
+		&_text {
+			height: 70%;
+			flex-direction: row;
+			color: $secondary;
+			font-size: $font-size-base;
+			margin-top: 7vh;
+
+			ul {
+				li {
+					font-size: $font-size-base;
+				}
+			}
+		}
+
+		&_left {
+			width: calc(50% - #{$containerPadding} - #{$paddingBase});
+			height: calc(100% - (#{$containerPadding} * 2));
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-right: $paddingBase;
+			padding: $containerPadding;
+			background: url("../images/kraevedia_catBack.png") 50% 0 no-repeat;
+			background-size: auto 100%;
+		}
+
+		&_right {
+			width: calc(50% - #{$containerPadding} - #{$paddingBase});
+			height: calc(100% - (#{$containerPadding} * 2));
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin-left: $paddingBase;
+			padding: $containerPadding;
+			background: url("../images/kraevedia_catBack.png") 50% 0 no-repeat;
+			background-size: auto 100%;
+
+			p {
+				margin-bottom: calc(#{$paddingBase} / 2.5);
+			}
+		}
+	}
+
+	//@include grid-media($XLarge) {
+	//	width: calc(#{$containerWidth} + (#{$containerWidth} / #{$containerIncrease}));
+	//	height: calc((#{$containerWidth} + (#{$containerWidth} / #{$containerIncrease})) / 1.57);
+	//	//background-size: calc(#{$containerWidth} + (#{$containerWidth} / 2));
+	//}
+	//
+	//@include grid-media($Large) {
+	//	width: calc(#{$containerWidth} + (#{$containerWidth} / #{$containerIncrease}));
+	//	height: calc((#{$containerWidth} + (#{$containerWidth} / #{$containerIncrease})) / 1.57);
+	//	//background-size: calc(#{$containerWidth} + (#{$containerWidth} / 2));
+	//}
+
+	//@include grid-media($Medium) {
+	//	width: $containerWidth;
+	//	height: calc(#{$containerWidth} / 1.57);
+	//}
+
+	//@include grid-media($HSmall) {
+	//	width: $containerWidth;
+	//	height: calc(#{$containerWidth} / 1.57);
+	//}
+
+	@include grid-media($Small) {
+		width: calc(100% - 2rem);
+		height: calc(100vh - 1rem);
+		min-height: 100vh;
+		padding: 0 1rem;
+		position: relative;
+		top: 0;
+		left: 0;
+		margin-top: 1rem;
+		transform: translate(0, 0);
+
+		&--wide {
+			height: calc(100vh - #{$containerPadding} - (#{$containerPadding} / 1.5));
+			min-height: inherit;
+			margin: $containerPadding 0 (calc(#{$containerPadding} / 1.5)) 0;
+			overflow: scroll;
+			align-items: flex-start;
+		}
+
+		&__wrapper {
+			//height: inherit;
+			min-height: 50vh;
+			overflow: scroll;
+			align-items: flex-start;
+
+			&_category {
+				justify-content: flex-end;
+			}
+
+			&_subcategory {
+				flex-direction: column;
+				justify-content: flex-start;
+				margin-top: 0;
+			}
+
+			&_about {
+				justify-content: flex-start;
+			}
+		}
+
+		&__back {
+			display: none;
+			visibility: hidden;
+		}
+
+		&__category {
+			flex-direction: column;
+			//margin-top: -15vh;
+		}
+
+		&__title {
+			margin-bottom: 1rem;
+		}
+
+		&__about {
+			//height: inherit;
+			min-height: 50%;
+			top: 0;
+			justify-content: flex-start;
+
+			&_back {
+				background: none;
+			}
+
+			&_text {
+				height: inherit;
+				flex-direction: column;
+				color: $fourth;
+				font-size: $font-size-large;
+				margin-top: 0;
+				overflow: auto;
+
+				ul {
+					li {
+						font-size: $font-size-large;
+					}
+				}
+			}
+
+			&_person {
+				color: $fourth;
+
+				p {
+					font-size: $font-size-large;
+				}
+
+				&--gone {
+					border-color: $fourth;
+				}
+
+				&:first-child {
+					margin-top: 2rem;
+				}
+			}
+
+			&_left {
+				width: 100%;
+				height: initial;
+				margin-right: 0;
+				background: none;
+				padding: 0;
+			}
+
+			&_right {
+				width: 100%;
+				height: initial;
+				margin-left: 0;
+				background: none;
+				padding: 0;
+			}
+		}
+	}
+
+}
+/* @end  */
