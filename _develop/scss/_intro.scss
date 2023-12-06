@@ -14,8 +14,8 @@
     width: auto;
     height: 50vmin;
     display: block;
-    position: absolute;
-    top: 50%;
+    position: fixed;
+    top: 50vh;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 5;
@@ -29,8 +29,8 @@
     width: 100vw;
     height: 35vh;
     display: block;
-    position: absolute;
-    bottom: 0;
+    position: fixed;
+    top: 65vh;
     left: 0;
     background-color: lighten($third, 50%);
     z-index: 3;
@@ -42,15 +42,46 @@
 
 #introStreet {
     width: 100vw;
-    height: 65vh;
+    height: 15vh;
     display: block;
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: 50vh;
     left: 0;
-    background-color: lighten($five, 30%);
+    background-color: lighten($third, 40%);
+    z-index: 2;
+
+    img {
+        @extend %imgCenter;
+    }
+}
+
+#introBuildings {
+    width: 100vw;
+    height: 35vh;
+    display: block;
+    position: fixed;
+    top: 15vh;
+    left: 0;
+    background-color: lighten($third, 60%);
     z-index: 1;
 
     img {
         @extend %imgCenter;
     }
 }
+
+#introBack {
+    width: 100vw;
+    height: 50vh;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: lighten($five, 30%);
+    z-index: 0;
+
+    img {
+        @extend %imgCenter;
+    }
+}
+

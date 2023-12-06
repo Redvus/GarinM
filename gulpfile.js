@@ -59,6 +59,7 @@ gulp.task('app-js', function(){
         path.src.js + 'Intro.js',
         path.src.js + 'ArrowsAll.js',
         path.src.js + 'Settings.js',
+        path.src.js + 'smoothScroll.js',
         path.src.js + 'app.js'
     ])
         .pipe(concat('app.js'))
@@ -73,7 +74,7 @@ gulp.task('vendor-js', function(){
         path.src.npm + 'gsap/dist/' + 'ScrollToPlugin.js',
         path.src.npm + 'gsap/dist/' + 'ScrollTrigger.js',
         path.src.npm + 'imagesloaded/' + 'imagesloaded.pkgd.js',
-        // path.src.npm + 'locomotive-scroll/dist/' + 'locomotive-scroll.js',
+        path.src.npm + 'locomotive-scroll/dist/' + 'locomotive-scroll.js',
         // path.src.npm + 'plyr/dist/' + 'plyr.js',
         // path.src.js + 'jquery.requestAnimationFrame.js',
         // path.src.js + 'jquery.mousewheel.js',
@@ -96,7 +97,8 @@ gulp.task('watch', function() {
         path.watch.js + 'Intro.js',
         path.watch.js + 'ArrowsAll.js',
         path.watch.js + 'About.js',
-        path.watch.js + 'Settings.js'], gulp.series('app-js'));
+        path.watch.js + 'Settings.js',
+        path.watch.js + 'smoothScroll.js'], gulp.series('app-js'));
     // gulp.watch(path.watch.js + 'jgrowl.js', gulp.series('jgrowl-js'));
 
     // gulp.watch(path.dest.css + '/js/**/*.js', browserSync.reload);

@@ -4,14 +4,22 @@ class Intro {
         const introBlockTop = document.createElement('div'),
             introMonumentBlock = document.createElement('picture'),
             introStreetBlock = document.createElement('picture'),
-            introFloorBlock = document.createElement('picture')
+            introBuildingsBlock = document.createElement('picture'),
+            introBackBlock = document.createElement('picture'),
+            introFloorBlock = document.createElement('picture'),
+            introContainer = document.querySelector('.wrapper__intro_container')
         ;
         introBlockTop.className = 'wrapper__top';
+        wrapper.className += ' wrapper__intro';
+        // introContainer.className = 'wrapper__intro_container';
+        // introContainer.setAttribute('data-scroll-section', '');
 
         //Элементы на первой
         introMonumentBlock.id = 'introMonument';
         introFloorBlock.id = 'introFloor';
         introStreetBlock.id = 'introStreet';
+        introBuildingsBlock.id = 'introBuildings';
+        introBackBlock.id = 'introBack';
         introMonumentBlock.innerHTML = `
             <img src="images/tema_juchka.png" id="introMonumentImage" alt="Тема и Жучка. Памятник">
         `;
@@ -24,9 +32,12 @@ class Intro {
         introBlockTop.innerHTML = `
             <h1>Гарин-Михайловский</h1>
         `;
-        container.appendChild(introMonumentBlock);
-        container.appendChild(introFloorBlock);
-        container.appendChild(introStreetBlock);
+        // wrapper.appendChild(introContainer);
+        wrapper.appendChild(introMonumentBlock);
+        wrapper.appendChild(introFloorBlock);
+        wrapper.appendChild(introStreetBlock);
+        wrapper.appendChild(introBuildingsBlock);
+        // wrapper.appendChild(introBackBlock);
         // wrapper.appendChild(introBlockTop);
 
         const introBlockBack = document.createElement('div');
@@ -45,31 +56,77 @@ class Intro {
         `;
         // wrapper.appendChild(introBlockButtons);
 
-        const wrapperTop = document.querySelector('.wrapper__top'),
-            wrapperTitle = document.querySelector('.wrapper__title'),
-            wrapperBottom = document.querySelector('.wrapper__bottom'),
-            wrapperBack = document.querySelector('.wrapper__intro')
+        const introMonument = document.getElementById('introMonument'),
+            introFloor = document.getElementById('introFloor'),
+            introStreet = document.getElementById('introStreet'),
+            introBuildings = document.getElementById('introBuildings'),
+            introBack = document.getElementById('introBack')
         ;
 
         function introAnim() {
-            let tl = gsap.timeline();
+            let tl = new gsap.timeline({
+                scrollTrigger: {
+                    trigger: introContainer,
+                    scroller: wrapper,
+                    scrub: true,
+                    // pin: true,
+                    start: "top top",
+                    end: "bottom bottom",
+                    toggleActions: "play none none reverse",
+                    // markers: {
+                    // 	startColor: "#000",
+                    // 	endColor: "#000"
+                    // }
+                },
+                // onStart: () => {
+                //     tl.set(scrollMarkerTop, {
+                //         backgroundColor: '#f2a07c'
+                //     })
+                // }
+            });
+
             tl
-                .to(wrapperBack, {
-                    duration: 0.6,
-                    autoAlpha: 1
+                .to(introMonument, {
+                    y: "60vh",
+                    scale: 3,
+                    // autoAlpha: 0
                 })
-                .to(wrapperTop, {
-                    duration: 0.4,
-                    delay: '-0.4',
-                    autoAlpha: 1
+                .to(introFloor, {
+                    delay: "-0.5",
+                    y: "100vh",
+                    scale: 4,
+                    // autoAlpha: 0
                 })
-                .to(wrapperBottom, {
-                    duration: 0.4,
-                    delay: '-0.4',
-                    autoAlpha: 1
+                .to(introStreet, {
+                    delay: "-0.5",
+                    y: "50vh",
+                    scale: 3,
+                    // autoAlpha: 0
+                })
+                .to(introBuildings, {
+                    delay: "-0.5",
+                    y: "50vh",
+                    scale: 3,
+                    // autoAlpha: 0
+                })
+                .to(introMonument, {
+                    delay: "-0.2",
+                    y: "80vh",
+                    autoAlpha: 0
+                })
+                .to(introStreet, {
+                    delay: "-0.6",
+                    y: "70vh",
+                    autoAlpha: 0
+                })
+                .to(introBuildings, {
+                    delay: "-0.6",
+                    y: "90vh",
+                    autoAlpha: 0
                 })
             ;
+            ScrollTrigger.refresh();
         }
-        // introAnim();
+        introAnim();
     }
 }

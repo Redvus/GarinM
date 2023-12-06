@@ -225,8 +225,8 @@ function authorsStart() {
 }
 
 function init() {
+    scrollSmooth();
     introDev();
-    // categoryDev();
 }
 
 init();
