@@ -18,7 +18,7 @@
     top: 50vh;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 5;
+    z-index: 10;
 
     img {
         @extend %imgCenter;
@@ -33,36 +33,86 @@
     top: 65vh;
     left: 0;
     background-color: lighten($third, 50%);
-    z-index: 3;
+    z-index: 9;
 
     img {
         @extend %imgCenter;
+        object-position: top;
     }
 }
 
 #introStreet {
     width: 100vw;
-    height: 15vh;
+    height: 21vh;
     display: block;
     position: fixed;
-    top: 50vh;
+    top: 45vh;
     left: 0;
-    background-color: lighten($third, 40%);
-    z-index: 2;
+    //background-color: lighten($third, 40%);
+    z-index: 8;
+
+    img {
+        @extend %imgCenter;
+        object-position: top;
+    }
+}
+
+#introBuildings {
+    width: 100vw;
+    height: 47vh;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    //background-color: lighten($third, 60%);
+    z-index: 7;
+
+    img {
+        @extend %imgCenter;
+        object-position: bottom;
+    }
+}
+
+#introBack {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: lighten($five, 30%);
+    z-index: 0;
+
+    img {
+        @extend %imgCenter;
+        object-position: bottom;
+    }
+}
+
+// Section 2
+#introHouse {
+    width: 110vmin;
+    height: auto;
+    display: block;
+    position: fixed;
+    top: 91vh;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.01);
+    z-index: 0;
 
     img {
         @extend %imgCenter;
     }
 }
 
-#introBuildings {
-    width: 100vw;
-    height: 35vh;
+#introTree_1 {
+    width: auto;
+    height: 30vmin;
     display: block;
     position: fixed;
-    top: 15vh;
-    left: 0;
-    background-color: lighten($third, 60%);
+    top: 80vh;
+    left: 20%;
+    transform: translate(-50%, -50%) scale(1);
     z-index: 1;
 
     img {
@@ -70,15 +120,45 @@
     }
 }
 
-#introBack {
-    width: 100vw;
-    height: 50vh;
+#introTree_2 {
+    width: auto;
+    height: 30vmin;
     display: block;
     position: fixed;
-    top: 0;
-    left: 0;
-    background-color: lighten($five, 30%);
-    z-index: 0;
+    top: 80vh;
+    left: 80%;
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 1;
+
+    img {
+        @extend %imgCenter;
+    }
+}
+
+#introTree_3 {
+    width: auto;
+    height: 50vmin;
+    display: block;
+    position: fixed;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+
+    img {
+        @extend %imgCenter;
+    }
+}
+
+#introTree_4 {
+    width: auto;
+    height: 50vmin;
+    display: block;
+    position: fixed;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
 
     img {
         @extend %imgCenter;

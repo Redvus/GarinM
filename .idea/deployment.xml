@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="SMIBS" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false">
+    <option name="confirmBeforeUploading" value="false" />
+    <serverData>
+      <paths name="SMIBS">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/css" local="$PROJECT_DIR$/_build/css" web="/" />
+            <mapping deploy="/js" local="$PROJECT_DIR$/_build/js" web="/" />
+            <mapping deploy="/images" local="$PROJECT_DIR$/_build/images" web="/" />
+            <mapping deploy="/images" local="$PROJECT_DIR$/_build/assets/projects/garin/images" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

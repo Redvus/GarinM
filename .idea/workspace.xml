@@ -4,22 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d642258-c8c8-4bde-9ded-2349a63f4230" name="Changes" comment="Разместил основные элементы на заставке. Обрезал фото памятника.">
-      <change afterPath="$PROJECT_DIR$/_develop/_js/smoothScroll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_develop/scss/_scroll.scss" afterDir="false" />
+    <list default="true" id="7d642258-c8c8-4bde-9ded-2349a63f4230" name="Changes" comment="Разместил элементы первого экрана и анимировал при прокрутке первое приближение.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_build/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/_build/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_build/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/_build/css/main.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_build/js/app-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/_build/js/app-min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/js/vendor-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/_build/js/vendor-min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_develop/_js/Intro.js" beforeDir="false" afterPath="$PROJECT_DIR$/_develop/_js/Intro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_develop/_js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/_develop/_js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_develop/_js/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/_develop/_js/vendor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_develop/scss/_intro.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_develop/scss/_intro.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_develop/scss/_layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_develop/scss/_layout.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_develop/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_develop/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,25 +42,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "js.buildTools.gulp.gulp_package_dir": "/Volumes/RedvusWork/GamesDev/Garin/node_modules/gulp",
-    "last_opened_file_path": "/Volumes/RedvusWork/GamesDev/Garin/_develop/scss",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
+    &quot;js.buildTools.gulp.gulp_package_dir&quot;: &quot;/Volumes/RedvusWork/GamesDev/Garin/node_modules/gulp&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Volumes/RedvusWork/GamesDev/Garin/_build/assets/projects/garin/images&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_build/assets/projects/garin/images" />
       <recent name="$PROJECT_DIR$/_develop/scss" />
       <recent name="$PROJECT_DIR$/_develop/_js" />
     </key>
@@ -114,7 +112,13 @@
       <workItem from="1700656282406" duration="2698000" />
       <workItem from="1701767413115" duration="6754000" />
       <workItem from="1701848597026" duration="4361000" />
-      <workItem from="1701856651807" duration="1038000" />
+      <workItem from="1701856651807" duration="1235000" />
+      <workItem from="1701925465901" duration="117000" />
+      <workItem from="1701925649653" duration="2128000" />
+      <workItem from="1702030870873" duration="1873000" />
+      <workItem from="1702382017288" duration="154000" />
+      <workItem from="1702382508204" duration="91000" />
+      <workItem from="1702459347482" duration="10135000" />
     </task>
     <task id="LOCAL-00001" summary="Начало проекта">
       <created>1700132841434</created>
@@ -130,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700660757832</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Разместил элементы первого экрана и анимировал при прокрутке первое приближение.">
+      <created>1701859386267</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701859386267</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +178,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Начало проекта" />
     <MESSAGE value="Разместил основные элементы на заставке. Обрезал фото памятника." />
-    <option name="LAST_COMMIT_MESSAGE" value="Разместил основные элементы на заставке. Обрезал фото памятника." />
+    <MESSAGE value="Разместил элементы первого экрана и анимировал при прокрутке первое приближение." />
+    <option name="LAST_COMMIT_MESSAGE" value="Разместил элементы первого экрана и анимировал при прокрутке первое приближение." />
   </component>
 </project>

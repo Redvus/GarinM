@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="178.21.10.63" id="18e7b3c6-db7c-4f9f-91b1-1f1d3008fe33" port="22" customName="SMIBS" nameFormat="CUSTOM" username="root" useOpenSSHConfig="true">
+        <option name="customName" value="SMIBS" />
+      </sshConfig>
+    </configs>
+  </component>
+</project>
